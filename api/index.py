@@ -5,6 +5,10 @@ import time
 
 app = Flask(__name__)
 
+@app.route('/')
+def index():
+    return 'hi vercel!'
+    
 # 存储临时上传的图片的字典，格式为 {图片ID: (图片路径, 上传时间)}
 temp_images = {}
 
